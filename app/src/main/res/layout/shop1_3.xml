@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/actionbar_shop_leftback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/back"
+                android:background="@color/orange_main"
+                android:padding="10dp"
+                android:scaleType="centerInside" />
+
+
+
+            <ImageButton
+                android:id="@+id/actionbar_rightbt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@color/orange_main"
+                android:padding="10dp"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/actionbar_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="包子馒头"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="4dp">
+
+
+        <Button
+            android:id="@+id/shopButton1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/daosanjia"
+            android:text="自定义排序"
+            android:textColor="#ff9400"/>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/devide_line"></LinearLayout>
+
+        <Button
+            android:id="@+id/shopButton2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/daosanjia"
+            android:text="距离范围"
+            android:textColor="#ff9400" />
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/devide_line"></LinearLayout>
+
+        <Button
+            android:id="@+id/shopButton3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:drawableRight="@drawable/daosanjia"
+            android:text="优惠活动"
+            android:textColor="#ff9400" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/devide_line"></LinearLayout>
+
+
+    <ListView
+        android:id="@+id/storelist_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

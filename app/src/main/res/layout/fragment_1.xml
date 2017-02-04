@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--//actionbar-->
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:id="@+id/main_top_actonbar"-->
+        <!--android:background="@color/orange_main">-->
+
+        <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/orange_main"-->
+            <!--android:layout_weight="1"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:padding="10dp"-->
+            <!--android:src="@drawable/location_normal" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_weight="2"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:text="南昌大学（前湖校区）"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="20sp" />-->
+        <!--<ImageButton-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/orange_main"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="10dp"-->
+            <!--android:id="@+id/fragment1_search"-->
+            <!--android:src="@drawable/search" />-->
+
+
+    <!--</LinearLayout>-->
+    //头部按钮
+    <LinearLayout
+        android:id="@+id/top_button_ll"
+        android:layout_width="match_parent"
+        android:layout_weight="3.5"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        //上行
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            //button1
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    android:id="@+id/top_bt_1"
+                    style="@style/Top_bt"
+                    android:background="@drawable/top_button_yellow"
+                    android:src="@drawable/baozi" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:text="@string/top_tv_1" />
+            </LinearLayout>
+
+            //button2
+
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    style="@style/Top_bt"
+                    android:id="@+id/top_bt_2"
+                    android:background="@drawable/top_button_og"
+                    android:src="@drawable/chaoniangao" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:text="@string/top_tv_2" />
+            </LinearLayout>
+
+            //button3
+
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    style="@style/Top_bt"
+                    android:id="@+id/top_bt_3"
+                    android:background="@drawable/top_button_yellow"
+                    android:src="@drawable/mianbao" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:text="@string/top_tv_3" />
+            </LinearLayout>
+
+            //button4
+
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    android:id="@+id/top_bt_4"
+                    style="@style/Top_bt"
+                    android:background="@drawable/top_button_og"
+                    android:src="@drawable/miantiao" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:text="@string/top_tv_4"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        //下行
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            //button5
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    android:id="@+id/top_bt_5"
+                    style="@style/Top_bt"
+                    android:background="@drawable/top_button_og"
+                    android:src="@drawable/xidian" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:layout_below="@id/top_bt_5"
+                    android:text="@string/top_tv_5" />
+            </LinearLayout>
+
+
+            //button6
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    android:id="@+id/top_bt_6"
+                    style="@style/Top_bt"
+                    android:background="@drawable/top_button_green"
+                    android:src="@drawable/fruit" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:layout_below="@id/top_bt_6"
+                    android:text="@string/top_tv_6" />
+            </LinearLayout>
+
+
+            //button7
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    android:id="@+id/top_bt_7"
+                    style="@style/Top_bt"
+                    android:background="@drawable/top_button_blue"
+                    android:src="@drawable/drink" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:layout_below="@id/top_bt_7"
+                    android:text="@string/top_tv_7" />
+            </LinearLayout>
+
+
+            //button8
+            <LinearLayout style="@style/Top_ll">
+
+                <com.zaodiancan.zaodiancan.View.CircleImageButton
+                    android:id="@+id/top_bt_8"
+                    style="@style/Top_bt"
+                    android:background="@drawable/top_button_red"
+                    android:src="@drawable/server" />
+
+                <TextView
+                    style="@style/Top_tv"
+                    android:layout_below="@id/top_bt_8"
+                    android:text="@string/top_tv_8" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/devide_line"/>
+    //选择框
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+        <Button android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableBottom="@drawable/main_select_bg_bottom"
+            android:background="@android:color/white"
+            android:text="套餐"
+            android:id="@+id/fragment1_bt_select1"
+            android:textColor="@color/orange_main"/>
+        <View android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey_dark"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment1_bt_select2"
+            android:layout_weight="1"
+            android:text="店铺"
+            android:background="@android:color/white"
+            android:textColor="@color/orange_main"/>
+
+
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devide_line"/>
+<ListView
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="5"
+    android:id="@+id/fragment1_listview">
+
+    </ListView>
+
+</LinearLayout>

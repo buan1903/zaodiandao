@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    //actionbar
+
+    <LinearLayout
+        android:id="@+id/main_top_actonbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange_main">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="老头包子铺"
+            android:paddingLeft="30dp"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/fragment1_search"
+            android:layout_width="40dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="match_parent"
+            android:background="@color/orange_main"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/my_collect_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="35dp">
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="早点"
+
+            android:textColor="@color/orange_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/grey" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="相册"
+            android:textColor="@color/orange_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/grey" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="商家"
+            android:textColor="@color/orange_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/jian_bg"
+                android:text="减"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="满10减2(在线支付专享）" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="4dp"
+                android:background="@color/blue"
+                android:text="抵"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="打赏币可抵10%" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/grey" />
+    //两个Fragment
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        //左边栏
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:orientation="vertical">
+            //button list
+
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                          android:background="@color/grey_dark">
+
+                <ImageView android:layout_width="18dp"
+                           android:layout_height="24dp"
+                            android:src="@drawable/hot_list"
+                        android:layout_gravity="center_vertical"/>
+
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@color/grey_dark"
+                        android:id="@+id/store_left_bt0"
+                        android:text="热销榜"
+                        android:textColor="@color/dark"
+                        android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <LinearLayout android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:orientation="horizontal"
+                          android:gravity="center_horizontal"
+                          android:background="@color/grey_dark">
+                <ImageView android:layout_width="18dp"
+                           android:layout_height="24dp"
+                           android:src="@drawable/favourte_list"
+                           android:layout_gravity="center_vertical"/>
+            <Button
+                android:id="@+id/store_left_bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/grey_dark"
+                android:text="好评榜"
+                android:textColor="@color/dark"
+                android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <Button
+                android:id="@+id/store_left_bt2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/grey_dark"
+                android:gravity="center"
+                android:textColor="@color/dark"
+                android:text="营养套餐"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <Button
+                android:textColor="@color/dark"
+                android:id="@+id/store_left_bt3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/grey_dark"
+                android:gravity="center"
+                android:text="包子馒头"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <Button
+                android:id="@+id/store_left_bt4"
+                android:layout_width="match_parent"
+                android:textColor="@color/dark"
+                android:layout_height="40dp"
+                android:background="@color/grey_dark"
+                android:gravity="center"
+                android:text="健康饮品"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+            <Button
+                android:textColor="@color/dark"
+                android:id="@+id/store_left_bt5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/grey_dark"
+                android:gravity="center"
+                android:text="其它"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/grey" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:background="@color/grey_dark"
+                android:gravity="left|center_vertical"
+                android:text="热卖美食" />
+
+            <ListView
+                android:id="@+id/store_right_list"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></ListView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">早点到</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="top_tv_1">包子馒头</string>
+    <string name="top_tv_2">炒饭年糕</string>
+    <string name="top_tv_3">面包饼类</string>
+    <string name="top_tv_4">面条饺子</string>
+    <string name="top_tv_5">西点</string>
+    <string name="top_tv_6">水果</string>
+    <string name="top_tv_7">饮品</string>
+    <string name="top_tv_8">服务</string>
+    <string name="my_user_name">美味可口的提莫酱</string>
+    <string name="my__user_local">长居地：南昌</string>
+    <string name="my_food">我的早点</string>
+    <string name="my_food_hint">代收/待评/已评</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_collect_hint">美味值得铭记</string>
+    <string name="my_wallect">我的钱包</string>
+    <string name="my_wallect_hint">余额/打赏币/红包</string>
+    <string name="my_jiankanshipu">健康食谱</string>
+    <string name="my_wodefenxiang">我的分享</string>
+    <string name="my_liulanjilu">浏览记录</string>
+    <string name="my_diwei">地点定位</string>
+    <string name="my_shouhuodizhi">收货地址管理</string>
+    <string name="my_mimaxiugai">修改账户密码</string>
+    <string name="my_tongyong">通用设置</string>
+    <string name="my_yijian">意见反馈</string>
+    <string name="my_shipu_hint">为您量身定制的早点</string>
+    <string name="my_share_hint">发布和关注</string>
+    <string name="my_local_hint">若未联网则自动使用上次定位</string>
+    <string name="search_hot_1">庆丰包子铺</string>
+    <string name="search_hot_2">沙县小吃</string>
+    <string name="search_hot_3">大娘水饺</string>
+    <string name="search_hot_4">包容天下</string>
+    <string name="search_hot_5">大脸鸡排</string>
+    <string name="search_hot_6">李记粥店</string>
+    <string name="search_history_1">燕饺</string>
+    <string name="search_history_2">沙县小吃</string>
+    <string name="search_history_3">小米粥</string>
+    <string name="search_history_4">茄子包</string>
+    <string name="my_yijian_hint">意见反馈</string>
+
+
+
+
+
+
+
+
+</resources>

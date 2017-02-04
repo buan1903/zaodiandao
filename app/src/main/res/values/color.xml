@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="orange_main">#ff9400</color>
+    <color name="orange_dark">#ff8500</color>
+    <color name="grey">#dedede</color>
+    <color name="dark">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ffd710</color>
+    <color name="green">#1ebe00</color>
+    <color name="blue">#007ddc</color>
+    <color name="red">#ff0000</color>
+    <color name="grey_dark">#f7f7f7</color>
+    <color name="devide_line">#CBCED2</color>
+
+
+</resources>

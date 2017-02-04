@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_ll"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    //viewpager
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/orange_main">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/actionbar_leftback"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@color/orange_main"
+                android:padding="10dp"
+                android:visibility="gone"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/actionbar_leftlocation"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:visibility="visible"
+                android:src="@drawable/location_normal"
+                android:background="@color/orange_main"
+                android:padding="10dp"
+                android:scaleType="centerInside" />
+
+            <ImageButton
+                android:id="@+id/actionbar_rightbt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/search"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:background="@color/orange_main"
+                android:padding="10dp"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/actionbar_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="南昌大学 （前湖校区）"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <com.zaodiancan.zaodiancan.View.MyViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5"></com.zaodiancan.zaodiancan.View.MyViewPager>
+    //边界线条
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/devide_line"></LinearLayout>
+
+    /
+
+    //底部按钮
+
+    <LinearLayout
+        android:id="@+id/main_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/bt_bottom_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/zaodiantan_select" />
+
+        <ImageButton
+            android:id="@+id/bt_bottom_2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/zaodiandai_normal" />
+
+        <ImageButton
+            android:id="@+id/bt_bottom_3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/zaofenxiang_normal" />
+
+        <ImageButton
+            android:id="@+id/bt_bottom_4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:padding="8dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/wode_normal" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

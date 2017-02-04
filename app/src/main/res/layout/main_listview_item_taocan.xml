@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp">
+
+    //店铺图片
+
+    <ImageView
+            android:id="@+id/main_listitem_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="24dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/jianfeitaocanA"/>
+
+    //右边栏
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/main_listitem_img">
+
+        <TextView
+                android:id="@+id/main_listitem_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="3dp"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:text="减肥套餐A"/>
+
+        <TextView
+                android:id="@+id/main_listitem_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_listitem_title"
+                android:text="牛肉包x2+鸡蛋+豆浆+苹果"
+                android:textStyle="bold"
+                android:textColor="@color/dark"/>
+
+        <ImageView
+                android:id="@+id/main_listitem_star"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/main_listitem_content"
+                android:paddingTop="4dp"
+                android:scaleType="fitStart"
+                android:src="@drawable/fivestar" />
+
+        <TextView
+                android:id="@+id/main_listitem_haoping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_listitem_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/main_listitem_star"
+                android:text="(65)"
+                android:gravity="center"
+                android:singleLine="true" />
+
+        <TextView
+                android:id="@+id/main_listitem_xiaoliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_listitem_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/main_listitem_haoping"
+                android:text="月售87单"
+                android:gravity="center"
+                />
+
+        //价格
+
+        <TextView
+                android:id="@+id/main_listitem_renmingbi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/main_listitem_star"
+                android:text="¥"
+                android:textColor="@color/orange_main"
+                android:textSize="18sp"/>
+        <TextView
+                android:id="@+id/main_listitem_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/main_listitem_renmingbi"
+                android:layout_below="@id/main_listitem_star"
+                android:textColor="@color/orange_main"
+                android:text="6.5"
+                android:textSize="19sp"/>
+    </RelativeLayout>
+
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/devide_line" />
+</RelativeLayout>

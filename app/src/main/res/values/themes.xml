@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Cactionbar" parent="android:Widget.ActionBar" >
+        <item name="android:background" >#ff9400</item>
+        </style>
+</resources>

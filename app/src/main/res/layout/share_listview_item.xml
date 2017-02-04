@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- 头像图片 user  早餐名字share_zaocanming  用户名字username  分享时间share_time -->
+<!-- 分想的三个图片 ID share_img1 share_img2 share_img3-->
+<!-- 分享的文字ID share_text-->
+<!-- 点赞数目（64）带括号的textView share_dianzanshu -->
+<!-- 评论数目（31）带括号的textView  share_pinglunshu -->
+<!-- 下拉按钮  share_pinglunbutton -->
+
+
+<LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="6dp"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+             android:orientation="vertical">
+        <ImageView
+                android:id="@+id/user"
+                android:layout_width="116px"
+                android:layout_height="116px"
+                android:src="@drawable/touxiang1"
+                android:layout_gravity="center_horizontal"
+                />
+    </LinearLayout>
+    <LinearLayout android:layout_width="0dp" android:layout_weight="4" android:layout_height="wrap_content"
+             android:orientation="vertical" android:layout_marginRight="4dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="4dp"
+                    >
+                <TextView android:id="@+id/share_title"
+
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="春饼卷菜" android:layout_gravity="left" android:textSize="16sp"
+                        android:textColor="#ff9400"/>
+                <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/share_name"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="重口味的小清新"  android:layout_gravity="center_vertical"/>
+                <TextView
+                        android:id="@+id/share_time"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="2分钟前"  android:layout_marginLeft="8dp" android:layout_gravity="center_vertical"/>
+            </LinearLayout>
+        <TextView
+                android:id="@+id/share_text"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                  android:maxLines="2" android:ellipsize="end" android:text="    烙饼卷菜式几乎所有东北人都爱吃的主食。烙几张饼，做个豆芽菜或者土豆丝，再来一碗小米粥，实在是享受。"
+                  android:layout_margin="2dp" android:textColor="#000000"
+                />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="135px">
+            <ImageView
+                    android:id="@+id/share_img1" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"
+                    android:src="@drawable/share1_1" />
+            <ImageView android:id="@+id/share_img2" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"
+                       android:src="@drawable/share1_2" />
+            <ImageView  android:id="@+id/share_img3" android:layout_width="0dp" android:layout_weight="1" android:layout_height="match_parent"
+                       android:src="@drawable/share1_3" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="45px"
+            android:gravity="right" android:layout_marginTop="5dp">
+
+        <ImageView android:layout_width="45px" android:layout_height="45px"
+                     android:scaleType="centerInside" android:src="@drawable/share_dianzan"/>
+
+        <TextView
+                android:id="@+id/share_dianzanshu" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="( 64 )"  android:layout_gravity="center_vertical" android:layout_marginRight="5dp"/>
+        <ImageView android:layout_width="45px" android:layout_height="45px"
+                   android:scaleType="centerInside" android:src="@drawable/share_pinlun"/>
+        <TextView android:id="@+id/share_pinglunshu" android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:text="( 31 )" android:layout_gravity="center_vertical" android:layout_marginRight="5dp"
+                />
+        <Button
+                android:id="@+id/share_pinglunbutton"
+                android:layout_gravity="center_vertical"
+                android:layout_width="25px" android:layout_height="35px"
+                android:background="@drawable/jiantou" android:layout_marginRight="10dp"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#f7f7f7"/>
+</LinearLayout>

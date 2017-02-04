@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="12dp">
+
+    //店铺图片
+
+    <ImageView
+        android:id="@+id/main_listitem_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="24dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/jianfeitaocanA"/>
+
+    //右边栏
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/main_listitem_img">
+
+        <TextView
+            android:id="@+id/main_listitem_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dark"
+            android:textSize="16sp"
+            android:textStyle="bold"
+                android:text="老头包子铺"/>
+
+        <ImageView
+            android:id="@+id/main_listitem_star"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/main_listitem_title"
+            android:paddingTop="4dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/fivestar" />
+
+        <TextView
+            android:id="@+id/main_listitem_haoping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_listitem_title"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/main_listitem_star"
+            android:gravity="center"
+            android:singleLine="true"
+                android:text="(29)"/>
+
+        <TextView
+            android:id="@+id/main_listitem_xiaoliang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_listitem_title"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/main_listitem_haoping"
+            android:layout_alignBaseline="@id/main_listitem_haoping"
+
+                android:text="月售67单"/>
+
+        //商店送达信息
+
+        <RelativeLayout
+            android:id="@+id/main_listitem_songdaxinxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:layout_below="@id/main_listitem_star"
+            android:layout_marginTop="4dp">
+
+            <TextView
+                android:id="@+id/main_listitem_qisongjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                    android:text="6元起送"/>
+
+            <TextView
+                android:id="@+id/main_listitem_songdashijian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/main_listitem_qisongjia"
+                android:textSize="12sp"
+                    android:text="11分钟送达"/>
+
+            <TextView
+                android:id="@+id/main_listitem_juli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_toRightOf="@id/main_listitem_songdashijian"
+                android:textScaleX="1.2"
+                android:textSize="12sp"
+                    android:text="1200米"/>
+        </RelativeLayout>
+
+        //商店优惠信息
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_listitem_songdaxinxi"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/main_listitem_jianimg"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@color/orange_main"
+                    android:gravity="center"
+                    android:scaleType="fitStart"
+                    android:text="减"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/main_listitem_jiantext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textSize="10sp"
+                        android:text="满15减2"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:id="@+id/main_listitem_diimg"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_marginLeft="2dp"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:scaleType="fitStart"
+                    android:text="抵"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/main_listitem_ditext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:singleLine="true"
+                    android:textSize="10sp"
+                        android:text="打赏金币可以抵扣20%"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/devide_line" />
+</RelativeLayout>
+
